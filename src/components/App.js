@@ -36,7 +36,7 @@ const App = () => {
   return (
     <div id="main">
       <h2>My todos</h2>
-      <p>{todos}</p>
+      <p id="todo-0">{todos}</p>
       <button id="add-todo-btn" onClick={addTodo}>Add Todo</button>
      
       <p>Count: {count} <button id="incr-cnt" onClick={increment}>+</button></p>
@@ -45,8 +45,8 @@ const App = () => {
       <p>{calculation}</p>
 
       <h1>React.memo</h1>
-      <input type="text" value={input} onChange={handleInput} />
-      <button id="skill-input" onClick={handleAddBtn}>Add Skill</button>
+      <input type="text" id="skill-input" value={input} onChange={handleInput} />
+      <button id="skill-btn" onClick={handleAddBtn}>Add Skill</button>
 
       <ul>
         {items.map((item, index) => (

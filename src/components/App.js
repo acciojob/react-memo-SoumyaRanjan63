@@ -39,7 +39,7 @@ const App = () => {
       <p id="todo-0">{todos}</p>
       <button id="add-todo-btn" onClick={addTodo}>Add Todo</button>
      
-      <p>Count: {count} <button id="incr-cnt" onClick={increment}>+</button></p>
+      <p>Count: {count} <button id="incr-cnt" onClick={increment}>0</button></p>
 
       <h1>Expensive Calculation</h1>
       <p>{calculation}</p>
@@ -50,7 +50,7 @@ const App = () => {
 
       <ul>
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} id="item-jumbotron">{item}</li>
         ))}
       </ul>
     </div>

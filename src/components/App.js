@@ -34,18 +34,18 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div id="main">
       <h2>My todos</h2>
       <p>{todos}</p>
-      <button onClick={addTodo}>Add Todo</button>
+      <button id="add-todo-btn" onClick={addTodo}>Add Todo</button>
       
-      <p>Count: {count} <button onClick={increment}>+</button></p>
+      <p>Count: {count} <button id="incr-cnt" onClick={increment}>+</button></p>
       <h1>Expensive Calculation</h1>
       <p>{calculation}</p>
 
       <h1>React.memo</h1>
       <input type="text" value={input} onChange={handleInput} />
-      <button onClick={handleAddBtn}>Add Skill</button>
+      <button id="skill-input" onClick={handleAddBtn}>Add Skill</button>
       <ul>
         {items.map((item, index) => (
           <li key={index}>{item}</li>
